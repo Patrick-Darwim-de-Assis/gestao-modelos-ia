@@ -44,30 +44,30 @@ Antes de começar, certifique-se de ter instalado em sua máquina o [Node.js](ht
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/Patrick-Darwim-de-Assis/gestao-modelos-ia.git](https://github.com/Patrick-Darwim-de-Assis/gestao-modelos-ia.git)```
+   git clone [https://github.com/Patrick-Darwim-de-Assis/gestao-modelos-ia.git](https://github.com/Patrick-Darwim-de-Assis/gestao-modelos-ia.git)
 
 2. **Acesse a pasta do projeto:**
 
     ```Bash
-    cd gestao-modelos-ia```
+    cd gestao-modelos-ia
 
 3. **Instale as dependências:**
 
     ```Bash
-    npm install```
+    npm install
 
 4. **Inicie o servidor de desenvolvimento:**
 
     ```Bash
-    npm run serve```
+    npm run serve
 
 5. Abra o navegador e acesse http://localhost:8080/.
 
 📦 **Como Fazer o Deploy**
 Caso realize alterações e deseje atualizar a versão publicada no GitHub Pages, execute:
 
-    ```Bash
-    npm run deploy```
     
+    npm run deploy
+
 Desenvolvido por Patrick Darwim de Assis.
 
