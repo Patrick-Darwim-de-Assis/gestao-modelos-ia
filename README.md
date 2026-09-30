@@ -45,7 +45,7 @@ A aplicação foi totalmente estruturada para ambientes de contêineres e micros
 
 ### **1. Build e Execução Local com Docker**
 
-    ```bash
+    
     # Construir a imagem Docker
     docker build -t patrickdarwimdeassis/dashboard-vue:latest .
 
@@ -88,7 +88,7 @@ Para implantar no Kubernetes (Killercoda, Minikube, EKS, etc.), utilize o manife
         targetPort: 80
         nodePort: 30080
     selector:
-        app: dashboard-vue
+        app: dashboard-vue```
 
 **Comandos de implantação no cluster**:
 
