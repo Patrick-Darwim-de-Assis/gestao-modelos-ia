@@ -92,7 +92,7 @@ Para implantar no Kubernetes (Killercoda, Minikube, EKS, etc.), utilize o manife
 
 **Comandos de implantação no cluster**:
 
-    ```Bash
+    
     # Criar Deployment e Service
     kubectl apply -f k8s/deployment.yaml
 
@@ -107,25 +107,25 @@ Para implantar no Kubernetes (Killercoda, Minikube, EKS, etc.), utilize o manife
 **Pré-requisitos**
 Certifique-se de ter instalado em sua máquina o Node.js e o Git.
 
-**Passo a Passo**
+**Passo a Passo**-
 **Clone o repositório**:
 
-    ```Bash
+    
     git clone [https://github.com/Patrick-Darwim-de-Assis/gestao-modelos-ia.git](https://github.com/Patrick-Darwim-de-Assis/gestao-modelos-ia.git)
 
 **Acesse a pasta do projeto**:
 
-    ```Bash
+    
     cd gestao-modelos-ia
 
 **Instale as dependências**:
 
-    ```Bash
+    
     npm install
 
 **Inicie o servidor de desenvolvimento**:
 
-    ```Bash
+    
     npm run serve
 
 **Acesse no navegador**: http://localhost:8080/
@@ -134,7 +134,7 @@ Certifique-se de ter instalado em sua máquina o Node.js e o Git.
 
 Caso realize alterações e deseje atualizar a versão estática no GitHub Pages:
 
-    ```Bash
+    
     npm run deploy
     
 Desenvolvido por **Patrick Darwim de Assis**.
