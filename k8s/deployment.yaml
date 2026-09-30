@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dashboard-vue-deployment
+  labels:
+    app: dashboard-vue
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dashboard-vue
+  template:
+    metadata:
+      labels:
+        app: dashboard-vue
+    spec:
+      containers:
+      - name: dashboard-vue
+        image: nginx:alpine
+        ports:
+        - containerPort: 80
