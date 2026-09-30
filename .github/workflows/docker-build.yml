@@ -1,0 +1,35 @@
+name: Build and Push Docker Image to Docker Hub
+
+# Executa o pipeline sempre que houver um 'git push' na branch main (ou master)
+on:
+  push:
+    branches: [ "main", "master" ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Baixa o código do seu repositório para o servidor do GitHub
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Faz login no Docker Hub usando as credenciais do Secrets
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # 3. Configura o ambiente de build de imagem Docker
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # 4. Compila o Dockerfile e faz o push direto para o Docker Hub
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dashboard-vue:latest
