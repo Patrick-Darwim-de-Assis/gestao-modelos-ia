@@ -55,7 +55,7 @@ A aplicação foi totalmente estruturada para ambientes de contêineres e micros
 **2. Implantação em Cluster Kubernetes**
 Para implantar no Kubernetes (Killercoda, Minikube, EKS, etc.), utilize o manifesto YAML abaixo:
 
-```bash
+    ```bash
     YAML
     apiVersion: apps/v1
     kind: Deployment
@@ -88,7 +88,7 @@ Para implantar no Kubernetes (Killercoda, Minikube, EKS, etc.), utilize o manife
         targetPort: 80
         nodePort: 30080
     selector:
-        app: dashboard-vue```
+        app: dashboard-vue
 
 **Comandos de implantação no cluster**:
 
