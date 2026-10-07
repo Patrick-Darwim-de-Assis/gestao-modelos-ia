@@ -161,7 +161,6 @@ docker run -d -p 8080:80 --name app-vue gestao-modelos-ia
 Acesse no navegador: http://localhost:8080 (ou na porta exposta no seu ambiente).
 
 Opção 2: Rodando em Modo de Desenvolvimento (Node.js)
-    ```Bash
     # Instalar dependências
     npm install
 
