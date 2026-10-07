@@ -136,5 +136,36 @@ Caso realize alterações e deseje atualizar a versão estática no GitHub Pages
 
     
     npm run deploy
+
+## 🚀 Demonstração ao Vivo
+
+A aplicação está hospedada e rodando no ambiente de nuvem do GitHub Codespaces:
+
+🔗 **[Acessar a Aplicação ao Vivo](https://legendary-space-waffle-x455pgvpvgx367v7-8080.app.github.dev/)**
+
+---
+
+## 🛠️ Como Executar o Projeto
+
+### Opção 1: Rodando com Docker (Recomendado)
+
+Você pode construir e rodar a imagem Docker em qualquer ambiente (Local ou Codespaces):
+
+```bash
+# 1. Construir a imagem Docker
+docker build -t gestao-modelos-ia .
+
+# 2. Executar o container
+docker run -d -p 8080:80 --name app-vue gestao-modelos-ia
+
+Acesse no navegador: http://localhost:8080 (ou na porta exposta no seu ambiente).
+
+Opção 2: Rodando em Modo de Desenvolvimento (Node.js)
+    ```Bash
+    # Instalar dependências
+    npm install
+
+    # Iniciar servidor de desenvolvimento
+    npm run dev
     
 Desenvolvido por **Patrick Darwim de Assis**.
