@@ -39,21 +39,39 @@ Este repositório contém uma aplicação web interativa focada no monitoramento
 
 ---
 
-## 🐳 Containerização & Kubernetes (K8s)
+## 🚀 **Como Executar o Projeto**
 
-A aplicação foi totalmente estruturada para ambientes de contêineres e microsserviços.
+### Opção 1: Rodando com Docker (Recomendado)
 
-### **1. Build e Execução Local com Docker**
+Você pode construir e rodar a imagem Docker localmente ou dentro do GitHub Codespaces:
 
-    
-    # Construir a imagem Docker
-    docker build -t patrickdarwimdeassis/dashboard-vue:latest .
+    ```bash
+    # 1. Construir a imagem Docker
+    docker build -t gestao-modelos-ia .
 
-    # Rodar o contêiner na porta 8080
-    docker run -d -p 8080:80 patrickdarwimdeassis/dashboard-vue:latest
+    # 2. Executar o container na porta 8080
+    docker run -d -p 8080:80 --name app-vue gestao-modelos-ia
 
-**2. Implantação em Cluster Kubernetes**
-Para implantar no Kubernetes (Killercoda, Minikube, EKS, etc.), utilize o manifesto YAML abaixo:
+
+Acesse no navegador em http://localhost:8080 (ou na porta correspondente exposta no Codespaces).
+
+Opção 2: Rodando em Modo de Desenvolvimento (Node.js)
+
+    ```bash
+    # 1. Clonar o repositório
+    git clone https://github.com/Patrick-Darwim-de-Assis/gestao-modelos-ia.git
+    cd gestao-modelos-ia
+
+    # 2. Instalar dependências
+    npm install
+
+    # 3. Iniciar o servidor de desenvolvimento
+    npm run dev
+
+
+🐳 **Kubernetes (K8s) & Deployment**
+
+Para implantar em um cluster Kubernetes (Killercoda, Minikube, EKS, etc.), utilize o manifesto YAML disponível em k8s/deployment.yaml:
 
 
     YAML
@@ -102,33 +120,6 @@ Para implantar no Kubernetes (Killercoda, Minikube, EKS, etc.), utilize o manife
     # Testar resposta interna do serviço
     curl localhost:30080
 
-🚀 **Como Executar o Projeto Localmente**
-
-**Pré-requisitos**
-Certifique-se de ter instalado em sua máquina o Node.js e o Git.
-
-**Passo a Passo**-
-**Clone o repositório**:
-
-    
-    git clone [https://github.com/Patrick-Darwim-de-Assis/gestao-modelos-ia.git](https://github.com/Patrick-Darwim-de-Assis/gestao-modelos-ia.git)
-
-**Acesse a pasta do projeto**:
-
-    
-    cd gestao-modelos-ia
-
-**Instale as dependências**:
-
-    
-    npm install
-
-**Inicie o servidor de desenvolvimento**:
-
-    
-    npm run serve
-
-**Acesse no navegador**: http://localhost:8080/
 
 📦 **Deploy no GitHub Pages**
 
@@ -137,34 +128,5 @@ Caso realize alterações e deseje atualizar a versão estática no GitHub Pages
     
     npm run deploy
 
-## 🚀 Demonstração ao Vivo
-
-A aplicação está hospedada e rodando no ambiente de nuvem do GitHub Codespaces:
-
-🔗 **[Acessar a Aplicação ao Vivo](https://legendary-space-waffle-x455pgvpvgx367v7-8080.app.github.dev/)**
-
----
-
-## 🛠️ Como Executar o Projeto
-
-### Opção 1: Rodando com Docker (Recomendado)
-
-Você pode construir e rodar a imagem Docker em qualquer ambiente (Local ou Codespaces):
-
-```bash
-# 1. Construir a imagem Docker
-docker build -t gestao-modelos-ia .
-
-# 2. Executar o container
-docker run -d -p 8080:80 --name app-vue gestao-modelos-ia
-
-Acesse no navegador: http://localhost:8080 (ou na porta exposta no seu ambiente).
-
-Opção 2: Rodando em Modo de Desenvolvimento (Node.js)
-    # Instalar dependências
-    npm install
-
-    # Iniciar servidor de desenvolvimento
-    npm run dev
     
 Desenvolvido por **Patrick Darwim de Assis**.
