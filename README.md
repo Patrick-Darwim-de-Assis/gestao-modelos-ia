@@ -13,6 +13,7 @@
 ## 🔗 Links de Acesso
 
 - 🌐 **Produção (GitHub Pages):** [https://patrick-darwim-de-assis.github.io/gestao-modelos-ia/](https://patrick-darwim-de-assis.github.io/gestao-modelos-ia/)
+- ☁️ **Ambiente Vivo (GitHub Codespaces):** [Acessar Instância ao Vivo](https://legendary-space-waffle-x455pgvpvgx367v7-8080.app.github.dev/)
 - 🐳 **Docker Hub Registry:** [patrickdarwimdeassis/dashboard-vue](https://hub.docker.com/r/patrickdarwimdeassis/dashboard-vue)
 
 ---
@@ -45,7 +46,7 @@ Este repositório contém uma aplicação web interativa focada no monitoramento
 
 Você pode construir e rodar a imagem Docker localmente ou dentro do GitHub Codespaces:
 
-    ```bash
+    
     # 1. Construir a imagem Docker
     docker build -t gestao-modelos-ia .
 
@@ -57,7 +58,7 @@ Acesse no navegador em http://localhost:8080 (ou na porta correspondente exposta
 
 Opção 2: Rodando em Modo de Desenvolvimento (Node.js)
 
-    ```bash
+    
     # 1. Clonar o repositório
     git clone https://github.com/Patrick-Darwim-de-Assis/gestao-modelos-ia.git
     cd gestao-modelos-ia
